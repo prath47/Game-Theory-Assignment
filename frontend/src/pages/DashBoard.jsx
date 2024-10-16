@@ -84,7 +84,7 @@ const DashBoard = () => {
 
     try {
       await axios.post(
-        "http://localhost:3000/api/b/bookings",
+        `${import.meta.env.VITE_BACKEND_URL}/api/b/bookings`,
         {
           courtId,
           date,
